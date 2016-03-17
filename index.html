@@ -27,6 +27,13 @@
 			<nav class="navigation">
 				<div class="navbar-header">
 					<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+						<div class="navbar-header">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			            </div>
+					</button>
 				</div>
 				<div class="logo">
 					<a href="#"><img src="img/logo.png" alt="logo"></a>
@@ -34,7 +41,17 @@
 				<div class="navbar-collapse collapse header-navbar" id="navbar">
 					<ul class="navbar-nav navbar-left header-navbar-menu">
 						<li><a href="#">Home</a></li>
-						<li><a href="#">About us</a></li>
+						<li class="header-li-dropdown">
+							<a href="#">About us</a>
+		                    <div class="dropdown">
+							    <ul class="dropdown-menu">
+							      <li><a href="#">OUR TEAM</a></li>
+							      <li><a href="#">OUR HISTORY</a></li>
+							      <li><a href="#">OUR FACILITY</a></li>
+							      <li><a href="#">ACCREDITATIONS</a></li>
+							    </ul>
+							</div>
+                  		</li>
 						<li><a href="#">Field to market</a></li>
 						<li><a href="#">Our products</a></li>
 					</ul>
@@ -49,5 +66,5 @@
 			</nav>
 		</div>
 	</header>
-	
+
 </body>
