@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+body{
+	font-family: Lato;
+}
+a:active, a:focus, a:visited{
+	outline: none !important;
+	text-decoration: none;
+}
+.main-header{
+	width: 100%;
+	background: #302109;
+	border-top: 5px solid #94c347;
+	border-bottom: 4px solid #222222;
+}
+.main-header-top{
+	color:#fff;;
+	font-size: 11px;
+	margin: 8px 6.6% 130px 2%;
+	height: 19px;
+}
+.main-header-contacts{
+	float: left;
+}
+.main-phone i, .main-mail i{
+	padding-right: 4px;
+}
+.main-mail{
+	padding-left: 10px;
+	margin-left: 5px;
+	border-left: 1px solid #6f675b;
+}
+.order-now-button{
+	float: right;
+	color:  #222222;
+	background: #fda31d;
+	padding: 5px 13px;
+	position: relative;
+	top: -13px;
+}
+.header-navbar{
+	padding: 0px;
+	position: relative;
+	text-transform: uppercase;
+}
+.header-navbar .navbar-nav:first-child{
+	margin-right: 18%;
+	text-align: right;
+	padding-right: 1.5%;
+}
+.header-navbar .navbar-nav {
+	width: 39%;
+	padding: 0px;
+}
+.header-navbar .navbar-nav > li{
+	float: none;
+	display: inline-block;
+	padding-bottom: 15px;
+	border-bottom: 4px solid transparent;
+}
+.header-navbar .navbar-nav > li:hover{
+	border-bottom: 4px solid #b7dc36;
+}
+.header-navbar .navbar-nav > li:hover a{
+	color:white;
+	text-decoration: none;
+}
+.header-navbar-menu{
+	margin-bottom: -5px;
+}
+.header-navbar-menu a{
+	color:#a9a8a8;;
+	display: inline-block;
+	padding: 13px 13px 13px 13px !important;
+	font-size: 12px;
+	border-right: 1px dashed #434241;
+}
+.header-navbar-menu li:last-child a{
+	border-right: 0px;
+}
+.logo{
+	position: absolute;
+	top: 0px;
+	margin-left: 50%;
+	left: -144px;
+}
