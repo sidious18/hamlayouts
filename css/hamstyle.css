@@ -184,8 +184,53 @@ a:active, a:focus, a:visited{
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
 }
-.potato-carousel-link:hover .link-arrow{
-	background: #94c347;
+.about-us-box{
+	background: url(../img/Border.png) no-repeat;
+	height:900px;
+	background-size: 100%;
+	padding: 83px 70px 105px 0px;
+}
+.about-us-box .col-xs-12{
+	padding: 0px;
+}
+.about-us-box .col-xs-5{
+	padding: 0px;
+}
+.about-us-title{
+	color:#3a3a3b;
+	margin: 40px 0px 55px 0px;	
+}
+.about-us-title span{
+	border-bottom: 1px solid #94c347;
+	padding-bottom: 15px;
+	display: inline-block;
+}
+.about-us-description{
+	font-size: 14px;
+	color: #696969;
+}
+.about-us-vegetables div{
+	display: flex;
+	margin-top: 25px;
+	float: left;
+	align-items:center;
+	height: 80px;
+}
+.about-us-vegetables div:nth-child(odd){
+	width: 60%;
+}
+.about-us-vegetables div:nth-child(even){
+	width: 40%;
+}
+.about-us-vegetables div span{
+	font-size: 11px;
+}
+.about-us-vegetables div p{
+	color: #94c347;
+	font-weight: bold;
+	font-size: 17px;
+	margin-left: 20px;
+	text-transform: uppercase;
 }
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
@@ -206,11 +251,37 @@ a:active, a:focus, a:visited{
 		font-size: 10px;
 	}
 	#potato-carousel .carousel-caption {
-		top:10%;
+		top:20%;
 	}
 	.link-arrow{
 		padding: 5px;
 	}
+	.about-us-box{
+		
+		height:750px;
+	}
+	.about-us-title {
+	    color: #3a3a3b;
+	    margin: 20px 0px 35px 0px;
+	    font-size: 20px;
+	}
+	.about-us-description{
+		font-size: 12px;
+	}
+	.about-us-vegetables img{
+		width: 60px;
+	}
+	.about-us-vegetables div{
+		height: 60px;
+	}
+	.about-us-vegetables div p{
+		font-size: 12px;
+		margin-left: 8px;
+	}
+	.about-us-vegetables div span {
+	    font-size: 9px;
+	}
+
 }
 @media all and (max-width: 996px) {
 	.header-navbar-menu a{
@@ -227,9 +298,51 @@ a:active, a:focus, a:visited{
 	.main-header{
 		background-position: 0px 75px;
 	}
-	
+	.about-us-title {
+	    color: #3a3a3b;
+	    margin: 0px 0px 25px 0px;
+	    font-size: 20px;
+	}
+	.about-us-description{
+		font-size: 10px;
+	}
+	.about-us-vegetables img{
+		width: 40px;
+	}
+	.about-us-vegetables div{
+		height: 50px;
+		margin-top:10px;
+	}
+	.about-us-vegetables div p{
+		font-size: 10px;
+		margin-left: 10px;
+	}
+	.about-us-vegetables div span {
+	    font-size: 7px;
+	}
 }
 @media all and (max-width: 768px) {
+	#potato-carousel{
+		display: none;
+	}
+	.main-header-top{
+		margin: 0px;
+	}
+	.main-header-contacts{
+		display: none;
+	}
+	.order-now-button{
+		position: absolute;
+	    top: 78px;
+	    right: 0px;
+	}
+	.main-header{
+		background-image: none;
+	}
+	.about-us-box{
+		background: none;
+		padding: 30px 15px 15px 15px;
+	}
 	.header-navbar .navbar-nav > li{
 		float: left;
 		display: block;
@@ -280,4 +393,18 @@ a:active, a:focus, a:visited{
 	.link-arrow{
 		padding: 3px;
 	}
+	.about-us-vegetables{
+		width: 100%;
+	}
+	.about-us-vegetables div{
+		width: 50%;
+	}
+	.about-us-title{
+		margin-bottom: 10px;
+	}
+	.logo {
+	    left: -40px;
+	    width: 80px
+	}
+
 }
