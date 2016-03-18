@@ -101,6 +101,7 @@ a:active, a:focus, a:visited{
 .navbar-toggle{
 	float: left !important;
 	color:#ddd;
+	cursor: pointer;
 }
 .navbar-toggle{
 	background: #ccc;
@@ -232,6 +233,33 @@ a:active, a:focus, a:visited{
 	margin-left: 20px;
 	text-transform: uppercase;
 }
+.potato-description-box{
+	width: 100%;
+	height: 324px;
+	background: url(../img/potato-background.png);
+	background-color: rgba(0,0,0,0.8);
+	background-repeat: repeat;
+	background-size: auto 324px;
+}
+.potato-description-benefits{
+	font-size: 0px;
+	color: white;
+	padding: 0px;
+}
+.potato-description-benefits li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	font-size: 13px;
+}
+.potato-description-benefits h4{
+	font-size: 26px;
+	margin-top:15px;
+	margin-bottom: 5px;
+}
+.potato-description{
+	padding: 67px 0px;
+}
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
 		padding: 8px !important;
@@ -281,7 +309,24 @@ a:active, a:focus, a:visited{
 	.about-us-vegetables div span {
 	    font-size: 9px;
 	}
-
+	.potato-description-box{
+		height: 286px;
+		background-size: auto 286px;
+	}
+	.potato-description {
+	    padding: 60px 0px;
+	}
+	.potato-description-benefits li{
+		font-size: 10px;
+	}
+	.potato-description-benefits h4{
+		font-size: 20px;
+		margin-top:10px;
+		margin-bottom: 3px;
+	}
+	.potato-description-benefits li img{
+		width: 90px;
+	}
 }
 @media all and (max-width: 996px) {
 	.header-navbar-menu a{
@@ -297,6 +342,9 @@ a:active, a:focus, a:visited{
 	}
 	.main-header{
 		background-position: 0px 75px;
+	}
+	.about-us-box{
+		height: 580px;
 	}
 	.about-us-title {
 	    color: #3a3a3b;
@@ -320,8 +368,29 @@ a:active, a:focus, a:visited{
 	.about-us-vegetables div span {
 	    font-size: 7px;
 	}
+	.potato-description-box{
+		height: 200px;
+		background-size: auto 200px;
+	}
+	.potato-description {
+	    padding: 32px 0px;
+	}
+	.potato-description-benefits li{
+		font-size: 7px;
+	}
+	.potato-description-benefits h4{
+		font-size: 14px;
+		margin-top:10px;
+		margin-bottom: 3px;
+	}
+	.potato-description-benefits li img{
+		width: 70px;
+	}
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
+	.about-us-box{
+		height: auto;
+	}
 	#potato-carousel{
 		display: none;
 	}
@@ -406,5 +475,14 @@ a:active, a:focus, a:visited{
 	    left: -40px;
 	    width: 80px
 	}
-
+	.potato-description {
+	    padding: 24px 0px;
+	}
+	.potato-description-benefits li{
+		width: 50%;
+	}
+	.potato-description-box{
+		height: 300px;
+		background-size: auto 300px;
+	}
 }
