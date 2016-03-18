@@ -73,6 +73,7 @@ a:active, a:focus, a:visited{
 }
 .header-navbar-menu{
 	margin-bottom: -5px;
+	font-size: 0px;
 }
 .header-navbar-menu a{
 	color:#a9a8a8;;
@@ -89,6 +90,7 @@ a:active, a:focus, a:visited{
 	top: 0px;
 	margin-left: 50%;
 	left: -144px;
+	z-index: 1;
 }
 .logo a{
 	display: inline-block;
@@ -136,13 +138,81 @@ a:active, a:focus, a:visited{
 .header-li-dropdown .dropdown .dropdown-menu li:last-child{
 	border-bottom: none;
 }
-@media screen and (max-width: 1200px) {
+#potato-carousel{
+	margin-top: -2px;
+}
+#potato-carousel img{
+	width: 100%;
+}
+#potato-carousel .carousel-caption{
+	top:25%;
+	right: 15%;
+	left: 15%;
+}
+#potato-carousel .carousel-caption h3{
+	font-size: 40px;
+	margin: 5px;
+}
+#potato-carousel .carousel-caption h2{
+	font-size: 50px;
+	margin: 5px;
+}
+#potato-carousel .carousel-caption p{
+	width: 50%;
+	margin: auto;
+}
+.potato-carousel-link{
+	background:  #94c347;
+	display: inline-block;
+	border-radius: 4px;
+	color:white;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top:30px;
+}
+.potato-carousel-link:hover{
+	color:inherit;
+	text-decoration: none;
+}
+.potato-carousel-link span{
+	padding: 0px 10px;
+}
+.link-arrow{
+	display: inline-block;
+	padding: 10px 13px;
+	background: #789f3a;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.potato-carousel-link:hover .link-arrow{
+	background: #94c347;
+}
+@media all and (max-width: 1200px) {
 	.header-navbar-menu a{
 		padding: 8px !important;
 		font-size: 11px;
 	}	
+	#potato-carousel .carousel-caption h3{
+		font-size: 20px;
+	}
+	#potato-carousel .carousel-caption h2{
+		font-size: 30px;
+	}
+	.potato-carousel-link{
+		font-size: 12px;
+		margin-top:20px;
+	}
+	#potato-carousel .carousel-caption p{
+		font-size: 10px;
+	}
+	#potato-carousel .carousel-caption {
+		top:10%;
+	}
+	.link-arrow{
+		padding: 5px;
+	}
 }
-@media screen and (max-width: 996px) {
+@media all and (max-width: 996px) {
 	.header-navbar-menu a{
 		padding: 4px !important;
 		font-size: 9px;
@@ -157,8 +227,9 @@ a:active, a:focus, a:visited{
 	.main-header{
 		background-position: 0px 75px;
 	}
+	
 }
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 	.header-navbar .navbar-nav > li{
 		float: left;
 		display: block;
@@ -189,5 +260,24 @@ a:active, a:focus, a:visited{
 	.header-navbar .navbar-nav > li
 	{
 		border-bottom: 4px solid transparent !important;
+	}
+	#potato-carousel .carousel-caption h3{
+		font-size: 14px;
+	}
+	#potato-carousel .carousel-caption h2{
+		font-size: 16px;
+	}
+	.potato-carousel-link{
+		font-size: 8px;
+		margin-top:5px;
+	}
+	#potato-carousel .carousel-caption p{
+		font-size: 7px;
+	}
+	#potato-carousel .carousel-caption {
+		top:2%;
+	}
+	.link-arrow{
+		padding: 3px;
 	}
 }
