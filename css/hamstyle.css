@@ -588,6 +588,32 @@ a:active, a:focus, a:visited{
 	color:white;
 	text-decoration: none;
 }
+.picture-decor{
+	width: 100%;
+	margin: -2px 0px;
+	position: relative;
+}
+.picture-decor img{
+	width: 100%;
+}
+.picture-decor-caption{
+	position: absolute;
+	bottom: 5px;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	font-weight: bold;
+}
+.article-content{
+	margin: 50px auto;
+}
+.article-text img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
 		padding: 8px !important;
@@ -781,6 +807,9 @@ a:active, a:focus, a:visited{
 	.subscribe-button{
 		width: 24%;
 		font-size: 12px;
+	}
+	.picture-decor-caption{
+		font-size: 40px;
 	}
 }
 @media all and (max-width: 996px) {
@@ -978,6 +1007,9 @@ a:active, a:focus, a:visited{
 		width: 24%;
 		font-size: 12px;
 	}
+	.picture-decor-caption{
+		font-size: 30px;
+	}
 }
 @media all and (max-width: 767px) {
 	.left-main-footer-content {
@@ -1166,5 +1198,8 @@ a:active, a:focus, a:visited{
 	}
 	.subscribe-button{
 		width: 40%;
+	}
+	.picture-decor-caption{
+		font-size: 20px;
 	}
 }
