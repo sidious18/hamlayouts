@@ -211,27 +211,25 @@ a:active, a:focus, a:visited{
 	color: #696969;
 }
 .about-us-vegetables div{
-	display: flex;
 	margin-top: 25px;
-	float: left;
-	align-items:center;
-	height: 80px;
-}
-.about-us-vegetables div:nth-child(odd){
-	width: 60%;
-}
-.about-us-vegetables div:nth-child(even){
-	width: 40%;
+	width: 49%;
+	display: inline-block;
 }
 .about-us-vegetables div span{
 	font-size: 11px;
+}
+.about-us-vegetables div img{
+	width: 30%;
+	margin-right: 4%;
 }
 .about-us-vegetables div p{
 	color: #94c347;
 	font-weight: bold;
 	font-size: 17px;
-	margin-left: 20px;
 	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	width: 62%;
 }
 .potato-description-box{
 	width: 100%;
@@ -336,9 +334,11 @@ a:active, a:focus, a:visited{
 }
 .season-box{
 	text-align: center;
+	margin-top: 5%;
 }
 .season-separator-box{
 	padding: 0px;
+	margin: 1% 0 3%;
 }
 .season-separator-box li{
 	display: inline-block;
@@ -376,15 +376,56 @@ a:active, a:focus, a:visited{
 	width: 472px;
 	height: 472px;
 	display: inline-block;
+	position: relative;
 }
 .right-season-gallery a{
 	width: 225px;
 	height: 223px;
 	display: inline-block;
+	position: relative;
 }
 .right-season-gallery img{
 	width: 100%;
 	height: 100%;
+}
+.left-season-link:before, .right-season-gallery a:before{
+	opacity: 0;
+	content:"";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background: rgba(0,0,0,0.6);
+	transition: opacity 0.3s linear;
+}
+.left-season-link:hover:before,.right-season-gallery a:hover:before{
+	opacity: 1;
+}
+.season-img-caption{
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+}
+.season-img-caption span{
+	padding-top:4px;
+	border-top: 2px solid #fff;
+}
+.left-season-caption{
+	position: absolute;
+	bottom: 30px;
+	left: 35px;
+	right: 35px;
+	color:white;
+	text-align: left;
+}
+.left-season-caption p{
+	margin: 0px;
+}
+.left-season-caption:hover{
+	color:white !important;
 }
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
@@ -425,12 +466,8 @@ a:active, a:focus, a:visited{
 	.about-us-vegetables img{
 		width: 60px;
 	}
-	.about-us-vegetables div{
-		height: 60px;
-	}
 	.about-us-vegetables div p{
 		font-size: 12px;
-		margin-left: 8px;
 	}
 	.about-us-vegetables div span {
 	    font-size: 9px;
@@ -506,6 +543,26 @@ a:active, a:focus, a:visited{
 	    width: 167.5px;
 		height: 167.5px;
 	}
+	.season-img-caption{
+		bottom: 7px;
+		left: 10px;
+		font-size: 20px;
+	}
+	.season-img-caption span{
+		padding-top:3px;
+		border-top: 2px solid #fff;
+	}
+	.left-season-caption{
+		bottom: 20px;
+		left: 25px;
+		right: 25px;
+	}
+	.left-season-caption p{
+		font-size: 12px;
+	}
+	.left-season-caption h3{
+		font-size: 18px;
+	}
 }
 @media all and (max-width: 996px) {
 	.header-navbar-menu a{
@@ -537,12 +594,10 @@ a:active, a:focus, a:visited{
 		width: 30px;
 	}
 	.about-us-vegetables div{
-		height: 50px;
 		margin-top:10px;
 	}
 	.about-us-vegetables div p{
 		font-size: 10px;
-		margin-left: 10px;
 	}
 	.about-us-vegetables div span {
 	    font-size: 7px;
@@ -617,6 +672,26 @@ a:active, a:focus, a:visited{
 	.right-season-gallery a {
 	    width: 120.5px;
 		height: 120.5px;
+	}
+	.season-img-caption{
+		bottom: 3px;
+		left: 7px;
+		font-size: 14px;
+	}
+	.season-img-caption span{
+		padding-top:3px;
+		border-top: 2px solid #fff;
+	}
+	.left-season-caption{
+		bottom: 15px;
+		left: 18px;
+		right: 18px;
+	}
+	.left-season-caption p{
+		font-size: 9px;
+	}
+	.left-season-caption h3{
+		font-size: 14px;
 	}
 }
 @media all and (max-width: 767px) {
@@ -696,9 +771,6 @@ a:active, a:focus, a:visited{
 	}
 	.about-us-vegetables{
 		width: 100%;
-	}
-	.about-us-vegetables div{
-		width: 50%;
 	}
 	.about-us-title{
 		margin-bottom: 10px;
