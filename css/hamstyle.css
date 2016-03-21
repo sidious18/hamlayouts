@@ -4,6 +4,7 @@
 }
 body{
 	font-family: Lato;
+	overflow-x:hidden;
 }
 a:active, a:focus, a:visited{
 	outline: none !important;
@@ -392,6 +393,8 @@ a:active, a:focus, a:visited{
 	opacity: 0;
 	content:"";
 	position: absolute;
+	top:0px;
+	left: 0px;
 	width: 100%;
 	height: 100%;
 	display: inline-block;
@@ -437,6 +440,8 @@ a:active, a:focus, a:visited{
 	padding-top: 10%;
 	background: url(../img/left-footer-background.png);
 	font-size: 14px;
+	min-height: 390px;
+	background-size: auto 100%;
 }
 .right-main-footer{
 	width: 60%;
@@ -503,6 +508,9 @@ a:active, a:focus, a:visited{
 	border-left: 1px dashed #636363;
 	border-right: 1px dashed #636363;
 }
+.footer-menu .fa-1{
+	width: 20px;
+}
 .footer-menu div{
 	border-right: 1px dashed #636363;
 	padding-left: 20px;
@@ -543,9 +551,42 @@ a:active, a:focus, a:visited{
 	color:#7da204;
 	text-decoration: none;
 }
-.footer-newsletter{
-	overflow: hidden;
-	padding-top:3%;
+.footer-menu-bottom{
+	margin: 0 -15px 10px 15px;
+	border-left: 1px dashed #636363;
+	border-right: 1px dashed #636363;
+	padding: 3% 15px 0px;
+	font-size: 0px;
+}
+.footer-menu-bottom .footer-menu-title{
+	display: inline-block;
+	width: 30%;
+	font-size: 14px;
+}
+.subscribe-mail{
+	display: inline-block;
+	border-radius: 0px;
+	border: none;
+	font-size: 16px;
+	padding: 3px 5px;
+	background: #454546;
+	color:white;
+	width: 37%;
+	margin: 0 1%;
+}
+.subscribe-button{
+	display: inline-block;
+	color: white;
+	padding: 5px;
+	background: #7ca104;
+	font-weight: bold;
+	text-transform: uppercase;	
+	width: 27%;
+	font-size: 14px;
+}
+.subscribe-button:hover{
+	color:white;
+	text-decoration: none;
 }
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
@@ -684,6 +725,64 @@ a:active, a:focus, a:visited{
 	.left-season-caption h3{
 		font-size: 18px;
 	}
+	.left-main-footer
+	{
+		font-size: 12px;
+		min-height: 335px;
+	}
+	.right-main-footer{
+		font-size: 14px;
+	}
+	.left-main-footer-box img{
+		margin-top: -8px;
+	}
+	.left-main-footer-content{
+		font-size: 10px;
+	}
+	.footer-content{
+		left:0px;
+	}
+	.left-main-footer-content p{
+		margin-bottom: 4.6px;
+	}
+	.left-main-footer-content p:first-child{
+		margin-bottom: 10px;
+	}
+	.left-main-footer-content .fa-1{
+		width: 20px;
+	}
+	.footer-menu div ul{
+		min-height: 155px;
+	}
+	.footer-menu-title{
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
+	.footer-menu-title span{
+		padding-bottom: 7px;
+		border-bottom: 2px solid #7da204;
+		width: 20px;
+	}
+	.footer-menu ul{
+		font-size: 10px;
+	}
+	.footer-menu ul li{
+		padding: 2px 0px;
+	}
+	.footer-menu-bottom .footer-menu-title{
+		display: inline-block;
+		width: 31%;
+		font-size: 12px;
+	}
+	.subscribe-mail{
+		font-size: 15px;
+		padding: 3px 5px 4px;
+		width: 36%;
+	}
+	.subscribe-button{
+		width: 24%;
+		font-size: 12px;
+	}
 }
 @media all and (max-width: 996px) {
 	.header-navbar-menu a{
@@ -815,8 +914,86 @@ a:active, a:focus, a:visited{
 	.left-season-caption h3{
 		font-size: 14px;
 	}
+	.left-main-footer
+	{
+		font-size: 11px;
+		min-height: 295px;
+	}
+	.right-main-footer{
+		font-size: 14px;
+	}
+	.left-main-footer-box img{
+		margin-top: -8px;
+	}
+	.left-main-footer-content{
+		font-size: 8.3px;
+	}
+	.footer-content{
+		left:0px;
+	}
+	.left-main-footer-content p{
+		margin-bottom: 4.6px;
+	}
+	.left-main-footer-content p:first-child{
+		margin-bottom: 10px;
+	}
+
+	.footer-menu div ul{
+		min-height: 135px;
+	}
+	.footer-menu-title{
+		font-size: 10px;
+		margin-bottom: 10px;
+	}
+	.footer-menu-title span{
+		padding-bottom: 7px;
+		border-bottom: 2px solid #7da204;
+		width: 20px;
+	}
+	.footer-menu div{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.footer-menu{
+		margin-left: 0px;
+	}
+	.footer-menu ul{
+		font-size: 10px;
+	}
+	.footer-menu ul li{
+		padding: 2px 0px;
+	}
+	.footer-menu-bottom{
+		margin: 0 -15px 10px 0px;
+	}
+	.footer-menu-bottom .footer-menu-title{
+		display: inline-block;
+		width: 31%;
+		font-size: 12px;
+	}
+	.subscribe-mail{
+		font-size: 15px;
+		padding: 3px 5px 4px;
+		width: 36%;
+	}
+	.subscribe-button{
+		width: 24%;
+		font-size: 12px;
+	}
 }
 @media all and (max-width: 767px) {
+	.left-main-footer-content {
+		width: 62%;
+	}
+	.left-main-footer-content {
+	    font-size: 11px;
+	}
+	.left-main-footer-content .fa-1{
+		width: 20px;
+	}
+	.left-main-footer {
+	    min-height: auto;
+	}
 	.about-us-box{
 		height: auto;
 	}
@@ -958,5 +1135,38 @@ a:active, a:focus, a:visited{
 		width: 100%;
 		height: 100%;
 	}
-
+	.footer-menu{
+		border: 0px;
+	}
+	.footer-content .col-sm-7{
+		padding: 0px;
+	}
+	.footer-menu div {
+		padding-left: 0px;
+		padding-right: 0px;
+		border: 0px;
+		min-height: 190px;
+	}
+	.footer-menu div ul {
+	    font-size: 11px;
+	}
+	.footer-menu-title{
+		font-size: 12px;
+	}
+	.footer-menu-bottom{
+		border-left:none;
+		border-right:none;
+		padding:0px;
+		margin: 0 0px 10px 0px;
+	}
+	.footer-menu-bottom .footer-menu-title{
+		width: 100%;
+	}
+	.subscribe-mail{
+		width: 59%;
+		margin-left: 0px;
+	}
+	.subscribe-button{
+		width: 40%;
+	}
 }
