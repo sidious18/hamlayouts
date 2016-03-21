@@ -439,7 +439,7 @@ a:active, a:focus, a:visited{
 	text-align: left;
 	padding-top: 10%;
 	background: url(../img/left-footer-background.png);
-	font-size: 14px;
+	font-size: 0px;
 	min-height: 390px;
 	background-size: auto 100%;
 }
@@ -727,7 +727,6 @@ a:active, a:focus, a:visited{
 	}
 	.left-main-footer
 	{
-		font-size: 12px;
 		min-height: 335px;
 	}
 	.right-main-footer{
@@ -916,7 +915,6 @@ a:active, a:focus, a:visited{
 	}
 	.left-main-footer
 	{
-		font-size: 11px;
 		min-height: 295px;
 	}
 	.right-main-footer{
