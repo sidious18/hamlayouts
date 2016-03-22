@@ -1,4 +1,7 @@
 jQuery(document).ready(function($) {
+	$(".subscribe-button").click(function(event) {
+		setTimeout('$("#subscribe-modal").modal("hide")', 3000)
+	});
 	if($(document).outerWidth() <= 768){
 		$(".left-season-link img").css("height",$(".left-season-link img").css("width"));
 		$(".right-season-gallery img").css("height",$(".right-season-gallery img").css("width"));

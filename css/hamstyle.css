@@ -576,13 +576,16 @@ a:active, a:focus, a:visited{
 }
 .subscribe-button{
 	display: inline-block;
-	color: white;
+	color: #fff;
 	padding: 5px;
 	background: #7ca104;
 	font-weight: bold;
 	text-transform: uppercase;	
 	width: 27%;
 	font-size: 14px;
+}
+.subscribe-button:visited{
+	color: #fff !important;
 }
 .subscribe-button:hover{
 	color:white;
@@ -700,6 +703,14 @@ a:active, a:focus, a:visited{
 	padding-bottom: 5px;
 	border-top: 3px solid #fff;
 	width: 40px;
+}
+#subscribe-modal p{
+	text-align: center;
+	margin: 50px 0px;
+	font-size: 40px;
+}
+#subscribe-modal .modal-dialog{
+	margin: 10% auto;
 }
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
@@ -1383,5 +1394,16 @@ a:active, a:focus, a:visited{
 		display: block;
 		width: 100%;
 		margin:20px 0px;
+	}
+	#subscribe-modal{
+		margin:10% auto;
+	}
+	#subscribe-modal p{
+		font-size: 20px;
+		margin: 30px 0px;
+	}
+	#subscribe-modal .modal-dialog{
+		width: 80%;
+		margin: 20px auto;
 	}
 }
