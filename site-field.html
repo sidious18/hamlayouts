@@ -11,6 +11,24 @@
 	<script src="js/hamscripts.js"></script>
 </head>
 <body>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1533695430259772',
+	      xfbml      : true,
+	      version    : 'v2.5'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+
+	</script>
 	<header class="main-header">
 		<div class="container">
 			<div class="main-header-top">
@@ -73,7 +91,7 @@
 		<div class="picture-decor-caption">Field to market</div>
 	</div>
 	<div class="container article-content">
-		<div class="col-sm-3">
+		<div class="col-sm-3 benefits-block">
 			<h3>What we are growing</h3>
 			<ul>
 				<li>Vegetables</li>
@@ -103,6 +121,11 @@
 		</div>
 		<div class="col-sm-3">
 			<h3>Like Us on Facebook</h3>
+			<div class="fb-page" 
+				  data-tabs="events"
+				  data-href="https://www.facebook.com/YoloBookStore"
+				  data-width="380">
+			</div>
 		</div>
 	</div>
 	<footer class="main-footer">

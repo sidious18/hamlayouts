@@ -614,6 +614,23 @@ a:active, a:focus, a:visited{
 	margin: auto;
 	max-width: 100%;
 }
+.benefits-block h3{
+	font-size: 20px;
+	color: #3a3a3a;
+	font-weight: 400;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	margin: 0px 0px 10px;
+}
+.benefits-block ul{
+	padding: 0px;
+	list-style-type: none;
+	font-size: 14px;
+}
+.benefits-block ul li{
+	padding: 10px 0px;
+	color:  #3a3a3a;
+}
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
 		padding: 8px !important;
@@ -1175,7 +1192,7 @@ a:active, a:focus, a:visited{
 		padding-left: 0px;
 		padding-right: 0px;
 		border: 0px;
-		min-height: 190px;
+		min-height: 200px;
 	}
 	.footer-menu div ul {
 	    font-size: 11px;
@@ -1199,7 +1216,7 @@ a:active, a:focus, a:visited{
 	.subscribe-button{
 		width: 40%;
 	}
-	.picture-decor-caption{
-		font-size: 20px;
+	.picture-decor{
+		display: none;
 	}
 }
