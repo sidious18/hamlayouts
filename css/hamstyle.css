@@ -3,7 +3,7 @@
     src: url(../fonts/Lato-Regular.ttf);
 }
 body{
-	font-family: Lato;
+	font-family: Lato !important;
 	overflow-x:hidden;
 }
 a:active, a:focus, a:visited{
@@ -619,7 +619,7 @@ a:active, a:focus, a:visited{
 	margin: 50px auto;
 }
 .article-text{
-	float: right;
+	float: right !important;
 }
 .article-text img{
 	display: block;
