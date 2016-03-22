@@ -712,6 +712,9 @@ a:active, a:focus, a:visited{
 #subscribe-modal .modal-dialog{
 	margin: 10% auto;
 }
+.fb-page {
+	max-width: 100% !important;
+}
 @media all and (max-width: 1200px) {
 	.header-navbar-menu a{
 		padding: 8px !important;
