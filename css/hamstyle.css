@@ -563,6 +563,11 @@ a:active, a:focus, a:visited{
 	width: 30%;
 	font-size: 14px;
 }
+.subscribe-form{
+	display: inline-block;
+	font-size: 0px;
+	width: 69%;
+}
 .subscribe-mail{
 	display: inline-block;
 	border-radius: 0px;
@@ -571,7 +576,7 @@ a:active, a:focus, a:visited{
 	padding: 3px 5px;
 	background: #454546;
 	color:white;
-	width: 37%;
+	width: 65%;
 	margin: 0 1%;
 }
 .subscribe-button{
@@ -581,8 +586,9 @@ a:active, a:focus, a:visited{
 	background: #7ca104;
 	font-weight: bold;
 	text-transform: uppercase;	
-	width: 27%;
+	width: 33%;
 	font-size: 14px;
+	border:none;
 }
 .subscribe-button:visited{
 	color: #fff !important;
@@ -903,10 +909,9 @@ a:active, a:focus, a:visited{
 	.subscribe-mail{
 		font-size: 15px;
 		padding: 3px 5px 4px;
-		width: 36%;
+
 	}
 	.subscribe-button{
-		width: 24%;
 		font-size: 12px;
 	}
 	.picture-decor-caption{
@@ -1139,10 +1144,8 @@ a:active, a:focus, a:visited{
 	.subscribe-mail{
 		font-size: 15px;
 		padding: 3px 5px 4px;
-		width: 36%;
 	}
 	.subscribe-button{
-		width: 24%;
 		font-size: 12px;
 	}
 	.picture-decor-caption{
@@ -1377,6 +1380,9 @@ a:active, a:focus, a:visited{
 	}
 	.subscribe-button{
 		width: 40%;
+	}
+	.subscribe-form{
+		width: 100%;
 	}
 	.picture-decor{
 		display: none;
