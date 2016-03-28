@@ -3,6 +3,9 @@ jQuery(document).ready(function($) {
 		$(".left-season-link img").css("height",$(".left-season-link img").css("width"));
 		$(".right-season-gallery img").css("height",$(".right-season-gallery img").css("width"));
 	}
+	$("#search-everywhere-button").click(function(event) {
+		$(".bottom-search").toggle();
+	});
 });
 $( window ).resize(function() {
 	if($(document).outerWidth() <= 768){
